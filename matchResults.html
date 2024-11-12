@@ -1,27 +1,36 @@
-<HTML>
-    <BODY>
-        <FORM action="processScores.php" method="GET">
-            <label for"teamName">Enter team name:</label>
-            <input type="text" name="teamName"/>
-            <TABLE >
-                <TH>Match</TH><TH>Home Team Score</TH><TH>Away Team Score</TH>
-                <TR>
-                    <TD>1</TD>
-                    <TD><Input type="text" name="home1"/></TD>
-                    <TD><Input type="text" name="away1"/></TD>
-                </TR>
-                <TR>
-                    <TD>2</TD>
-                    <TD><Input type="text" name="home2"/></TD>
-                    <TD><Input type="text" name="away2"/></TD>
-                </TR>
-                <TR>
-                    <TD>3</TD>
-                    <TD><Input type="text" name="home3"/></TD>
-                    <TD><Input type="text" name="away3"/></TD>
-                </TR>
-            </TABLE>
-            <input type="submit"/>
-        </FORM>
-    </BODY>
-</HTML>
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="processScore.php" method="GET">
+            <label for="teamName">Enter team name:</label>
+            <input type="text" name="teamName" required />
+            <table>
+                <thead>
+                    <tr>
+                        <th>Match</th>
+                        <th>Home Team Score</th>
+                        <th>Away Team Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><input type="text" name="home1" /></td>
+                        <td><input type="text" name="away1" /></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><input type="text" name="home2" /></td>
+                        <td><input type="text" name="away2" /></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><input type="text" name="home3" /></td>
+                        <td><input type="text" name="away3" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" />
+        </form>
+    </body>
+</html>
